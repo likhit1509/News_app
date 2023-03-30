@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    tools:context=".MainActivity">
+
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/include"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+
+        android:layout_marginTop="0dp"
+        android:backgroundTint="@color/Blue"
+        app:tabIndicatorColor="@color/white"
+        app:tabIndicatorHeight="3.5dp"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextColor="@color/white">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="General"
+            />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/sports"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Athletics" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/health"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medical" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/science"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scientific" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/entertainment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bollywood" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/technology"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IT" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/fragmentcontainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/include"
+        android:layout_marginTop="0dp"
+        >
+
+
+    </androidx.viewpager.widget.ViewPager>
+
+</RelativeLayout>
